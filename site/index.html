@@ -1,9 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test para la tarea 2</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="site/style.css"> 
+
+<title>Responsive Layout</title>
+
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin :10;
+  padding:0;
+}
+ 
+
+/********** Base styles **********/
+
+div.header {
+position:relative;  
+width:120%; height:5%;
+font-family: cursive; font-weight:bold;
+padding-left:40%; padding-right:30%;
+}
+
+
+p {
+  border: solid black;
+  background-color: gray;
+  width: 90%;
+  height: 230px;
+  color: black;
+}
+
+#meals {
+  height: 30px;
+  width: 65px;
+  position:relative; 
+  top:48px;
+  margin-left:76%; margin-right: 30%;
+  background-color:green;
+  box-sizing: border-box;
+  }
+
+  /*Add your CSS here!*/
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4    {
+    
+  float: left; position:relative; 
+  }
+  
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,  .col-md-12 
+  {
+    float: left; position:relative; 
+  }
+
+  .col-md-6 {
+    width: 50%;
+  
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+</style>
 </head>
+
+
 <body>
-<h1>hola coursera tarea 2.. Its great by JAAC   </h1>
+
+<div class="header"><h1>Our Menu</h1></div>
+
+<div class="row">
+
+    <div class="col-lg-4 col-md-6"><p id="meals">Chicken</p><p><br><br>Item 1 Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use media queries discussed in Lecture 23.)</p></div>
+  
+    <div class="col-lg-4 col-md-6"><p id="meals">Beef</p><p><br><br>Item 2 Different size content in this box Wow this is cool</p></div>
+    
+    <div class="col-lg-4 col-md-12"><p id="meals">Sushi</p> <p><br><br>Item 3 Layout: In the desktop view (992px and above), each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, each section should become wider or narrower. (Hint: use percentages to define width and use the 'float' property. See Lecture 24). For a visual reference of this view, see the desktop mockup illustration below.</p></div>
+
+
+</div>
+
 </body>
 </html>
