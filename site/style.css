@@ -1,0 +1,121 @@
+<style>
+
+* {
+  box-sizing: border-box;
+  margin :10;
+  padding:0;
+}
+ 
+
+/********** Base styles **********/
+
+div.header {
+position:relative;  
+width:120%; height:5%;
+font-family: cursive; font-weight:bold;
+padding-left:40%; padding-right:30%;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+}
+
+h2 {
+    font-size: 1.25em;
+    text-align: center;
+
+}
+
+.chicken h2 {
+  background-color: #DAA000;
+  margin-left:14em;
+  margin-top: 0em;
+}
+
+.chicken {
+  margin-top: 1em;
+  margin-left:1em;
+  background-color: #D7B880
+  }
+
+.beef h2 {
+  margin-left:14em; 
+  margin-top: 0em;
+  background-color: #4B2ADC;
+  color: white;
+
+}
+
+.beef {
+  margin-left:1em; 
+  margin-right:1em;
+  margin-top: 1em;
+  background-color: #9E93D3
+}
+
+.sushi h2 {
+  margin-left:14em; 
+  margin-top:0em;
+  background-color: #6FA174;
+  color:#FCE407;
+ }
+
+.sushi {
+  margin-right:1em;
+  margin-top: 1em;
+  background-color:#ABD2AF;
+}
+
+section {
+    border: 1px solid black;
+    margin: 0 1em 2em 1em;
+    padding: 2em 2em 2em 2em;
+    position: relative;
+}
+
+section > h2 {
+    border: 1px solid black;
+    width: 33.33%;
+
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+
+  /*Add your CSS here!*/
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4    {
+    
+  float: left; position:relative; 
+  }
+  
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,  .col-md-12 
+  {
+    float: left; position:relative; 
+  }
+
+  .col-md-6 {
+    width: 50%;
+  
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+</style>
